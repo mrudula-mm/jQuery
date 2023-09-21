@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validateform</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <form id="registration">
+            <label>Name</label>
+            <input type="text" name="name" id="name" placeholder="name"><br>
+            <div class="error" id="name-error"></div>
+
+            <label>Address</label>
+            <textarea name="address" id="address" placeholder="address"></textarea><br>
+            <div class="error" id="address-error"></div>
+
+            <label>DOB</label>
+            <input type="date" id="date" name="date"><br>
+            <div class="error" id="date-error"></div>
+
+            <label>Age</label>
+            <select name="age" id="age">
+                <option value="0" selected="" ></option>                
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+                <option value="35">35</option>
+            </select><br>
+            <div class="error" id="age-error"></div>
+
+        <div class="gender" id="genderId">
+            Gender:
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+        </div>
+        <div class="error" id="gender-error"></div>
+
+        <div class="terms" id="terms">
+            <input type="checkbox" name="terms">Are you agree to this terms
+        </div>
+            <div class="error" id="terms-error"></div>
+            <input type="submit" value="submit" id="submit">
+        </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>

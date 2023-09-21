@@ -1,0 +1,18 @@
+form {
+    border: 3px solid;
+    width: 500px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 45px;
+}
+.error{
+    color: red;
+}
+#submit{
+    font-size: 25px;
+    font-weight: bold;
+    align-items: center;
+}
