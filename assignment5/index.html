@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment5</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <p class="logo">SHOPPING CART</p>
+        <div class="icons">
+        <div class="cart"><i class="fa fa-shopping-cart" style="font-size:24px"></i><p id="cart_item_count">0</p></div>
+        <div class="search-container">
+          <input type="text" placeholder="Search.." name="search" id="inp">
+          <button type="button" id="search"><i class="fa fa-search"></i></button>
+        </div>
+        </div>
+          
+        <div class="filter-condition">
+            <span>Sort:</span>
+            <select name="sort" id="sort">
+                <option value="default">default</option>
+                <option value="LowToHigh">Low to high</option>
+                <option value="HighToLow">High to low</option>
+                <option value="Rating">Rating</option>
+            </select>
+        </div>
+
+        <div class="categ">
+            <span>Filter:</span>
+            <select name="category" id="cat">
+                <option value="default">Default</option>
+                <option value="smartphones">Smartphones</option>
+                <option value="laptops">Laptops</option>
+                <option value="fragrances">Fragrances</option>
+                <option value="skincare">Skincare</option>
+                <option value="groceries">Groceries</option>
+                <option value="home-decoration">Home Decoration</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div class="msg">
+            <h1 class="display" id="not_find_any_thing"></h1>
+        </div>
+        <div id="result_area"></div>
+   
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%             -->
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+                <div id="order"></div>
+                <div class="foot">
+                    <p>Total:</p>
+                    <p id="total_amount">$0</p>
+                </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="assignment5.js"></script>
+</body>
+</html>
